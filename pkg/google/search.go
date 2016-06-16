@@ -1,6 +1,5 @@
 package google
 
-// START1 OMIT
 type Result struct {
 	Title, URL string
 }
@@ -13,5 +12,3 @@ func Search(query string) ([]Result, error) {
 	}
 	return results, nil
 }
-
-// STOP1 OMIT

@@ -14,7 +14,7 @@ func init() {
 
 func main() {
 	start := time.Now()
-	results, err := google.SearchReplicated("golang", 80*time.Millisecond) // HLsearch
+	results, err := google.SearchReplicated("golang", 80 * time.Millisecond)
 	elapsed := time.Since(start)
 	fmt.Println(results)
 	fmt.Println(elapsed, err)
